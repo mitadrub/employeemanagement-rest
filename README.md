@@ -20,20 +20,35 @@ Application Architecture: -
 •	We are going to use MY SQL data base as the database layer.
 
 Client side Tools and Technologies used: -
+
 •	React Library
+
 •	Modern JavaScript (ES6)
+
 •	NodeJs and NPM
+
 •	Visual Studio Code IDE (Integrated Development Environment)
+
 •	Create React App CLI
+
 •	Bootstrap 4.5 and Axios HTTP library
+
 Server side Tools and Technologies used: -
+
 •	Spring Boot 2+
+
 •	Spring Data JPA (Hibernate)
+
 •	Maven
+
 •	JDK 11
+
 •	Embedded Tomcat Server 8.5+
+
 •	Spring Tool Suite IDE (STS)
+
 •	Postman – REST Client Tester
+
 •	MySQL Database
 
 Let’s Start: -
@@ -43,6 +58,9 @@ Let’s Start: -
 •	During creation of the project add these dependencies- 
 
     Spring Web – It will add the embedded Tomcat server and other important dependencies.
+    
     Spring Data JPA- To avail the development of DAO layer
+    
     MySQL Driver- To establish the connectivity with Database
+    
     Spring Boot Dev Tools- It will help to add the changes automatically and we don’t need to restart the server manually each time.
