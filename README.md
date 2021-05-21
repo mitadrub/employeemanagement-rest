@@ -51,7 +51,7 @@ Server side Tools and Technologies used: -
 
         •	MySQL Database
 
-During creation of the project add these dependencies- 
+During creation of the project added these dependencies- 
 
     Spring Web – It will add the embedded Tomcat server and other important dependencies.
     
