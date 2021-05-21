@@ -21,35 +21,35 @@ Application Architecture: -
 
 Client side Tools and Technologies used: -
 
-•	React Library
+        •	React Library
 
-•	Modern JavaScript (ES6)
+        •	Modern JavaScript (ES6)
 
-•	NodeJs and NPM
+        •	NodeJs and NPM
 
-•	Visual Studio Code IDE (Integrated Development Environment)
+        •	Visual Studio Code IDE (Integrated Development Environment)
 
-•	Create React App CLI
+        •	Create React App CLI
 
-•	Bootstrap 4.5 and Axios HTTP library
+        •	Bootstrap 4.5 and Axios HTTP library
 
 Server side Tools and Technologies used: -
 
-•	Spring Boot 2+
+        •	Spring Boot 2+
 
-•	Spring Data JPA (Hibernate)
+        •	Spring Data JPA (Hibernate)
 
-•	Maven
+        •	Maven
 
-•	JDK 11
+        •	JDK 11
 
-•	Embedded Tomcat Server 8.5+
+        •	Embedded Tomcat Server 8.5+
 
-•	Spring Tool Suite IDE (STS)
+        •	Spring Tool Suite IDE (STS)
 
-•	Postman – REST Client Tester
+        •	Postman – REST Client Tester
 
-•	MySQL Database
+        •	MySQL Database
 
 Let’s Start: -
 
