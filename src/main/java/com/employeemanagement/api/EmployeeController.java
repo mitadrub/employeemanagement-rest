@@ -1,5 +1,6 @@
 package com.employeemanagement.api;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,17 +27,20 @@ import com.employeemanagement.repository.EmployeeRepository;
 public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
+	private Date currentDate = new Date();
 
 	// get all employees
 	@GetMapping("/employee")
 	public List<Employee> getAllEmployees() {
 		return employeeRepository.findAll();
-
 	}
 
 	// Create employee rest api
+	@SuppressWarnings("deprecation")
 	@PostMapping("/employee")
 	public Employee createEmployee(@RequestBody Employee employee) {
+		int age = currentDate.getYear() - employee.getDateOfBirth().getYear();
+		employee.setAge(age);
 		return employeeRepository.save(employee);
 	}
 
@@ -49,6 +53,7 @@ public class EmployeeController {
 	}
 
 	// update employee
+	@SuppressWarnings("deprecation")
 	@PutMapping("/employee/{id}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable Long id, @RequestBody Employee employeeDetails) {
 		Employee employee = employeeRepository.findById(id)
@@ -56,6 +61,9 @@ public class EmployeeController {
 		employee.setFirstName(employeeDetails.getFirstName());
 		employee.setLastName(employeeDetails.getLastName());
 		employee.setEmailId(employeeDetails.getEmailId());
+		employee.setDateOfBirth(employeeDetails.getDateOfBirth());
+		int age = currentDate.getYear() - employeeDetails.getDateOfBirth().getYear();
+		employee.setAge(age);
 		return ResponseEntity.ok(employeeRepository.save(employee));
 
 	}

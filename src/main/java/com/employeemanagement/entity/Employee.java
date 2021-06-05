@@ -1,5 +1,7 @@
 package com.employeemanagement.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,6 +26,10 @@ public class Employee {
 	private String lastName;
 	@Column(name = "email_id")
 	private String emailId;
+	@Column(name = "date_of_birth")
+	private Date dateOfBirth;
+	@Column(name = "employee_age")
+	private int age;
 
 	public Employee(String firstName, String lastName, String emailId) {
 		super();
