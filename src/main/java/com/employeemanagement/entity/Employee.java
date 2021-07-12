@@ -31,11 +31,13 @@ public class Employee {
 	@Column(name = "employee_age")
 	private int age;
 
-	public Employee(String firstName, String lastName, String emailId) {
+	public Employee(String firstName, String lastName, String emailId, Date dateOfBirth, int age) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.emailId = emailId;
+		this.dateOfBirth = dateOfBirth;
+		this.age = age;
 	}
 
 }
