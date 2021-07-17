@@ -32,7 +32,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
  build:
-    needs: [Sonarcube]
     runs-on: ubuntu-latest
 
     steps:
